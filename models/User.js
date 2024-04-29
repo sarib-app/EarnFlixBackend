@@ -2,7 +2,7 @@ const mysql = require('mysql2/promise');
 const dbConfig = require('../config/db.config'); // Import database configuration
 const hashedPassword = require('../utils/hashPassword')
 class User {
-  constructor(username, email, password, firstname, lastname) {
+  constructor(username, password,email,  firstname, lastname) {
     this.username = username;
     this.password = password;
 
